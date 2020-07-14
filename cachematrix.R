@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+##This function creates a custom matrix object that can store data to cache and also have their respective setter and getters
+##Keep in mind in my solution you need to set the object after initializing it to use the cacheSolve() function
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL #initialize inverse
   
@@ -27,7 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+##This function is used to solve the inverse of a makeCacheMatrix object if its inverse is not found in the cache
+##otherwise just return the inverse if found in cache
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m<- x$getInverse() #get the inverse value from a makeCacheMatrix object
